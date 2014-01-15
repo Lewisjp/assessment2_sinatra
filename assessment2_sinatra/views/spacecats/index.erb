@@ -1,0 +1,13 @@
+<h2>Take us to your leader!</h2>
+
+<ul>
+<% @spacecats.each do |spacecats| %>
+	<li>
+		<a href="/spacecats/<%= spacecats.id %>"> <%= spacecats.cat_name %></a>
+		<%= spacecats.home_planet %>
+		<h3><%= spacecats.tagline %></h3>
+		<%= spacecats.superpower %>
+	</li>
+
+<% end %>
+</ul>

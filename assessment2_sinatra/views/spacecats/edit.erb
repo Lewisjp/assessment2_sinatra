@@ -1,0 +1,27 @@
+<form action="/spacecats/<%= @post.id %>" method="post">
+  <input type="hidden" name="_method" value="put" /> 
+
+  <label for="spacecats_cat_name"> Cat Name:</label><br />
+  <input id="post_cat_name" name="post[cat_name]" type="text" value="<%= @spacecats.cat_name %>" />
+  <br />
+
+  <label for="spacecats_home_planet"> Home Planet:</label><br />
+  <input id="post_home_planet" name="post[home_planet]" type="text" value="<%= @spacecats.home_planet %>" />
+  <br />
+
+  <label for="spacecats_tagline"> Tag Line:</label><br />
+  <input id="post_tagline" name="post[tagline]" type="text" value="<%= @spacecats.tagline %>" />
+  <br />
+
+  <label for="spacecats_superpower"> Superpower:</label><br />
+  <input id="post_" name="post[superpower]" type="text" value="<%= @spacecats.superpower %>" />
+  <br />
+
+
+
+
+  <input type="submit" value="Edit Post" />
+</form>   
+
+
+   
